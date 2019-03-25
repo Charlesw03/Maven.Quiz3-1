@@ -14,7 +14,7 @@ public class PigLatinGenerator {
                 piggyWord = word + "way";
             } else {
                 Integer vowelIndex = VowelUtils.getIndexOfFirstVowel(word);
-                if (vowelIndex == null) {
+                if (vowelIndex == -1) {
                     piggyWord = word + "ay";
                 } else {
                     String beginning = word.substring(0, vowelIndex);
